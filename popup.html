@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="US-ASCII">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jambofy Extension</title>
+        <link rel="stylesheet" href="bulma.min.css" />
+        <style>
+            /*.select.is-rounded.is-warning select:focus*/
+            /*{*/
+            /*    border-color: darkorange;*/
+            /*    background-color: darkslateblue;*/
+            /*}*/
+
+            /*.select.is-rounded.is-warning select option:checked*/
+            /*{*/
+            /*    background-color: orange;*/
+            /*    color: white;*/
+            /*}*/
+
+            /*.select.is-rounded.is-warning select option:hover*/
+            /*{*/
+            /*    background-color: darkorange;*/
+            /*}*/
+
+            /*.select:after*/
+            /*{*/
+            /*    color: black;*/
+            /*}*/
+        </style>
+    </head>
+
+    <body style="background-color:lightblue">
+
+        <div class="container m-2">
+            <h1 style="color:orangered; font-family: 'Niagara Engraved', sans-serif, inherit; "> Jambofy Extension &#128008 </h1>
+
+            <!-- Dropdown for toggling the cats-->
+            <div class="container m-2">
+                <div class="field">
+                    <label class="label" style="color:darkslateblue; font-family: 'Garamond', sans-serif, inherit; "> Toggle the cats</label>
+                    <div class="select is-rounded is-warning">
+                    <select id="toggleCats" style="border-color: darkorange; background-color: lightslategrey; --bulma-: orange" >
+                        <option value ="On" style="background-color: green; color: white;" > On</option>
+                        <option value ="Off" style="background-color: red; color: white;" > Off</option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown for the cat opacity-->
+            <div class="container m-2">
+                <div class="field">
+                    <label class="label" style="color:darkslateblue; font-family: 'Garamond', sans-serif, inherit; "> Change cat opacity </label>
+                    <div class="select is-warning is">
+                        <select id="opacity" style="border-color: darkorange; background-color: lightslategrey; --bulma-active-background-l-delta: hsl(0, 0%, 96%); --bulma-dropdown-divider-background-color: hsl(0, 0%, 96%); --bulma-dropdown-item-selected-color-l: hsl(0, 0%, 96%)" >
+                            <option value="100" style="background-color: darkslateblue; " > 100%</option>
+                            <option value="75" style="background-color: slateblue"> 75%</option>
+                            <option value="50" style="background-color: mediumslateblue"> 50%</option>
+                            <option value="25" style="background-color: cornflowerblue"> 25%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown for toggling the text switching-->
+            <div class="container m-2">
+                <div class="field">
+                    <label class="label" style="color:darkslateblue; font-family: 'Garamond', sans-serif, inherit; "> Toggle Schlatt Nicknames  </label>
+                    <div class="select is-rounded is-warning">
+                        <select id="toggleText" style="border-color: darkorange; background-color: lightslategrey; --bulma-: orange" >
+                            <option value ="Off" style="background-color: red; color: white;"> Off</option>
+                            <option value ="On" style="background-color: green; color: white;"> On</option>
+                        </select>
+                    </div>
+                    <label class="warning" style="color:darkred; font-family: 'Garamond', sans-serif, inherit; "> Warning: Experimental Feature </label>
+                </div>
+            </div>
+        </div>
+
+
+<!--        <h3 style="color:darkslategray; font-family: sans-serif, inherit; "> &#8970 &#128572 &#8971</h3> &lt;!&ndash; NOTE: for disabled feedback: &#	128575 &ndash;&gt;-->
+<!--        <button id="ToggleButton" style=" background-color: lavender; border-color: darkorange; scale: inherit; align-content: center">Toggle Cats</button>-->
+
+<!--        <h3 style="color:darkslategray">Cat Opacity</h3>-->
+
+    </body>
+
+    <script src="popup.js"></script>
+</html>
+</docutypehtml>
